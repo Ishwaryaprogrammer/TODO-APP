@@ -14,8 +14,8 @@ app.use(cors());
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 // Connect to MongoDB (use environment variable for deployment)
-const MONGO_URI = "MONGO_URI=mongodb+srv://ishwarya:kalaivani@todoapp.luve6.mongodb.net/?retryWrites=true&w=majority&appName=todoapp
-";
+const MONGO_URI = "mongodb+srv://ishwarya:kalaivani@todoapp.luve6.mongodb.net/?retryWrites=true&w=majority&appName=todoapp";
+
 mongoose.connect(MONGO_URI)
 
     .then(() => console.log('MongoDB connected'))
