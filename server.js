@@ -14,8 +14,8 @@ app.use(cors());
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 // Connect to MongoDB (use environment variable for deployment)
-const MONGO_URI = process.env.MONGO_URI;
-mongoose.connect(process.env.MONGO_URI)
+const MONGO_URI = "mongodb+srv://ishwarya:kalaivani@123@cluster0.luve6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+mongoose.connect(MONGO_URI)
 
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
